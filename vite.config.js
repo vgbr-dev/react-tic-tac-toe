@@ -7,6 +7,7 @@
 // » IMPORT THIRD PARTIES MODULES
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import pkg from './package.json';
 
 // ━━ TYPE DEFINITIONS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
@@ -14,6 +15,28 @@ import react from '@vitejs/plugin-react-swc';
  *
  * @typedef {import('vite').UserConfig} UserConfig
  */
+
+// ━━ CONSTANTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/**
+ * The `homepage` value from the package.json file.
+ *
+ * @type {string}
+ */
+const { homepage } = pkg;
+
+/**
+ * The GitHub repository URL in the format: https://github.com/<USERNAME>/<REPO>
+ *
+ * @type {string}
+ */
+const repoUrl = homepage.replace('#readme', '/');
+
+/**
+ * The repository name of the GitHub repository.
+ *
+ * @type {string}
+ */
+const repoName = `/${repoUrl.match(/https?:\/\/github.com\/[^/]+\/([^/]+)/)[1]}/`;
 
 // ━━ MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -25,6 +48,7 @@ import react from '@vitejs/plugin-react-swc';
  */
 const viteConfig = defineConfig({
   plugins: [react()],
+  base: repoName,
 });
 
 // ━━ EXPORT MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
