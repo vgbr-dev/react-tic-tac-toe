@@ -11,6 +11,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
+// ━━ CONSTANTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/**
+ * The `root` it is a `HTMLElement`, where the `ReactDOM.render` application
+ * will be inserted when the `.render` method is called and enables.
+ *
+ * @type {HTMLElement}
+ */
+const rootElement = document.getElementById('root');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
