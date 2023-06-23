@@ -20,8 +20,10 @@ import ReactDOM from 'react-dom/client';
  */
 const rootElement = document.getElementById('root');
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// ━━ RENDERER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// » MAIN RENDERER PROCESS
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-)
+);
