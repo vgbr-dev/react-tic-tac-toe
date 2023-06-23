@@ -1,7 +1,47 @@
 {
   "name": "react-tic-tac-toe",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
+  "description": "A Tic Tac Toe app implemented in React as a practice exercise.",
+  "keywords": [
+    "code repository",
+    "code storage",
+    "components",
+    "front-end",
+    "JavaScript",
+    "react",
+    "user interface",
+    "web development",
+    "tic-tac-toe",
+    "game",
+    "exercise",
+    "practice"
+  ],
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "homepage": "https://github.com/vgbr-dev/react-tic-tac-toe#readme",
+  "bugs": {
+    "url": "https://github.com/vgbr-dev/react-tic-tac-toe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vgbr-dev/react-tic-tac-toe.git"
+  },
+  "author": {
+    "name": "Victor Giovanni Beltrán Rodríguez",
+    "email": "vgbr.dev@gmail.com",
+    "url": "https://vgbr-dev.blogspot.com"
+  },
+  "contributors": [
+    {
+      "name": "Victor Giovanni Beltrán Rodriguez",
+      "email": "vgbr.dev@gmail.com",
+      "url": "https://vgbr-dev.blogspot.com"
+    }
+  ],
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
