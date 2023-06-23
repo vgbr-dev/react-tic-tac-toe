@@ -1,10 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/**
+ * @file Entry point of the React application.
+ * @module App
+ */
 
-function App() {
-  const [count, setCount] = useState(0)
+// ━━ IMPORT MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// » IMPORT REACT MODULES
+import { BrowserRouter as Router } from 'react-router-dom';
 
   return (
     <>
