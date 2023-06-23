@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* » RESET MARGIN AND PADDINGS OF ALL ELEMENTS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* » FIX PROBLEMS WITH IMAGES */
+img,
+picture,
+video,
+iframe,
+figure {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* » DEACTIVATE DEFAULT STYLES OF THE MAIN TEXT LABELS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  color: inherit;
+  font-size: 1em;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+/* » RESET THE LINKS TO FUNCTION AS BOXES */
+a {
+  display: block;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+/* » EXCEPT THOSE IN PARAGRAPHS */
+p a {
+  display: inline;
+}
+
+/* » REMOVE STYLES FROM LISTS */
+ol,
+li {
+  list-style-type: none;
+}
+
+/* » SET SOFT ANCHORS */
+html {
+  scroll-behavior: smooth;
+}
+
+/* » FIX PROBLEMS WITH QUOTES PSEUDO-ELEMENTS */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* » FIX PROBLEMS WITH FONTS AND FORM PLACEMENT */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  display: block;
+  appearance: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+}
+
+/* » RESET TABLES AND THEIR ELEMENTS */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* » FIX PROBLEMS WITH SVG ELEMENTS */
+svg {
+  display: block;
+  width: 100%;
+  fill: currentColor; /* stylelint-disable-line value-keyword-case */
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-smooth: always; /* stylelint-disable-line property-no-unknown */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  hyphens: auto;
+  line-height: 1.4em;
+}
