@@ -17,3 +17,5 @@ A Tic Tac Toe app implemented in React as a practice exercise.
 ![Toasts System](./docs/REACT_TIC_TAC_TOE_04.png)
 
 ## Enjoy the game/application
+
+![Toasts System](./docs/REACT_TIC_TAC_TOE_05.gif)
