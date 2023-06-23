@@ -10,6 +10,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+// » IMPORT APP COMPONENT
+import App from './App';
 
 // ━━ CONSTANTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
